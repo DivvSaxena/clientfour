@@ -65,7 +65,7 @@ a:hover{
 }
 
 .myLinks{
-    margin-top: 5em;
+    margin-top: 4em;
     display: none;
     flex-direction: column;
     justify-content: space-around;
