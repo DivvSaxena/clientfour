@@ -206,12 +206,13 @@ a:hover{
     background: url('./asset/background/bg3.png');
     background-size: cover;
     background-position: center;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #ffff;
+
 }
 
 .section-three > h1{
@@ -281,6 +282,7 @@ a:hover{
     font-weight: 400;
     padding: 1.5em;
     height: 20px;
+    margin-bottom: 5em;
     display: flex;
     align-items: center;
     border: none;
@@ -298,8 +300,8 @@ a:hover{
     background: url('./asset/background/bg2.png');
     background-size: cover;
     background-position: center;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -323,9 +325,15 @@ a:hover{
 .section-four > h1{
     font-family: "Noto Serif Bengali", serif;
     font-weight: 400;
-    font-size: 12vw;
-    margin-bottom: 1.5em;
-    margin-top: 2.5em;
+    font-size: 3rem;
+}
+
+h1.contact{
+    margin-bottom: 0;
+}
+
+.number{
+    margin-bottom: 2em;
 }
 
 .section-four > p{
