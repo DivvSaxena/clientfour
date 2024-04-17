@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Gloria+Hallelujah&family=Jacques+Francois+Shadow&family=Noto+Serif+Bengali:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+html,body{
+    margin: 0;
+    box-sizing: border-box;
+    background: #41295a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
+    z-index: -10;
+}
+
+/* CONTAINER STYLING */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 375px;
+    margin: 0 auto;
+    line-height: 1.5;
+    height: min-content;
+}
+
+
+/* HEADER STYLING */
+nav{
+    display: block;
+    position: fixed;
+    margin-top: 6em;
+    width: 100%;
+    max-width: 100vw;
+    height: 10vh;
+    z-index: 2;
+}
+
+.header{
+    position: fixed;
+    background: #121212;
+    width: 100%;
+    max-width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+}
+
+
+a{
+    text-decoration: none;
+    color: #ffff;
+    cursor: pointer;
+}
+
+a:hover{
+    font-size: 1.5rem;
+    color: #c68989;
+}
+
+.header-sub-one,
+.header-sub-two{
+    display: none;
+}
+
+.myLinks{
+    margin-top: 5em;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: width 10s, height 4s;
+    transition-delay: 1s;
+    align-items: center;
+    z-index: 2;
+    background: #121212;
+}
+
+.myLinks > a{
+    padding: 1em;
+    font-size: 1.25em;
+}
+
+.myLinks > a:hover{
+    font-size: 1.5rem;
+    color: #c68989;
+}
+
+    .hamburger:hover,
+    .hamburger:focus{
+        transition: width 2s, height 2s transform 4s;
+        transform: rotate(360deg);
+    }
+
+
+
+
+/* SECTION-ONE STYLING */
+.section-one{
+    background: url('./asset/background/bg1.png');
+    background-size: cover;
+    width: 100vw;
+    z-index: 1;
+    color: #ffff;
+}
+
+.content-section-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: start;
+    margin-top: 7em;
+    margin-left: 0.5em;
+    overflow-x: hidden;
+}
+
+.content-section-one > p{
+    font-size: 4.2vw;
+    font-family: "Noto Serif", serif;
+    margin-bottom: -1em;
+    text-shadow: 2px 2px 10px #0063cb;
+}
+
+.content-section-one > h1{
+    font-size: 16vw;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    text-shadow: 5px 5px 10px red;
+}
+
+.content-section-one > h2{
+    font-size: 15vw;
+    margin: -0.7em 0 0 4.15em;
+    text-shadow: 5px 5px 10px black;
+    font-family: "Jacques Francois Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.owner{
+    width: 80%;
+    background-size: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* SECTION TWO STYLING */
+
+.section-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('./asset/background/bg2.png');
+	background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    color: #ffff;
+    z-index: 10;
+}
+
+.section-two > h1{
+    font-family: "Noto Serif Bengali", serif;
+    font-weight: 400;
+    font-size: 12vw;
+    margin-bottom: 0;
+}
+
+
+
+.sub-section-two-one,
+.sub-section-two-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.sub-section-two-one > p,
+.sub-section-two-two > p{
+    word-spacing: .3em;
+    width: 86%;
+    margin-bottom: 3em;
+}
+
+
+.gif-one{
+    background: url('./asset/gif/tattoo.gif');
+    background-size: cover;
+    width: 90%;
+    height:195px;
+}
+
+.gif-two{
+    background: url('./asset/gif/tattoo2.gif');
+    background-size: cover;
+    width: 90%;
+    height:195px;
+}
+
+/* SECTION THREE STYLING */
+.section-three{
+    background: url('./asset/background/bg3.png');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffff;
+}
+
+.section-three > h1{
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.sub-section-three-one{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+.section-three > p{
+    width: 82%;
+}
+
+.sub-section-three-two{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: sticky;
+    margin-top: 2em;
+}
+
+.sub-section-three-two-one{
+    height: 300px;
+    width: 250px;
+    border: 2px solid wheat;
+    margin-left: -5em;
+    z-index: -1;
+}
+
+.sub-section-three-two-two{
+    background: url('./asset/work1.jpeg');
+    background-size: cover;
+    transition: width 2s, height 2s, transform 2s;
+    object-fit: cover;
+    background-position: center;
+    height: 300px;
+    width: 250px;
+    border: 2px solid wheat;
+    z-index: 5;
+    position: absolute;
+    top: -1em;
+}
+
+.sub-section-three-two-two:hover{
+    transform: rotate(360deg);
+}
+
+.sub-section-three-three{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:4em;
+}
+
+.sub-section-three-three > button{
+    font-family: "Noto Serif Bengali", serif;
+    font-weight: 400;
+    padding: 1.5em;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.sub-section-three-three > button:hover{
+    background-color: aqua;
+}
+
+/* SECTION FOUR STYLING */
+.section-four{
+    background: url('./asset/background/bg2.png');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffff;
+}
+
+.tv{
+    background: url('./asset/tv2real.png');
+    background-size: cover;
+    width: 100%;
+    height: 25%;
+    margin: 0 auto 3em;
+    
+}
+
+.tv > video{
+    width: 100vw ;
+    height:250px;
+}
+
+.section-four > h1{
+    font-family: "Noto Serif Bengali", serif;
+    font-weight: 400;
+    font-size: 12vw;
+    margin-bottom: 0;
+}
+
+.section-four > p{
+    font-size: 5.2vw;
+    font-family: "Noto Serif", serif;
+    width: 96%;
+}
+
+/* SECTION FIVE STYLING */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: #ffff;
+    background: linear-gradient(#0063cb,#0c151e);
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    margin: 0;
+    position: relative;
+    z-index: 10;
+    top: -2em;
+}
+
+.developer{
+    color: black;
+    margin: -1em;
+}
+
+.bg-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 150px;
+}
+
+.bg-footer > p{
+    margin-bottom: 0;
+}
+
+.bg-footer > hr{
+    width: 100vw;
+    margin: 0;
+}
+
+.footer > h1{
+    font-size: 16vw;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    color: #0183fb;
+    margin: 0;
+    margin-top: -0.95em;
+}
+
+
+
+/* MEDIA QUERIES */
+@media (min-width:769px) {
+    .container{
+        flex-direction: row;
+        width: 100%;
+        max-width: 1030px;
+    }
+
+    /* HEADER STYLING */
+    header{
+        margin: 0 auto;
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        margin-top: 8em;
+        width: 100%;
+        max-width: 100vw;
+        height: 10vh;
+        z-index: 2;
+    }
+    
+
+    .header-sub-one,
+    .header-sub-two{
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+        font-size: 1.25rem;
+        color: #ffff;
+    }    
+
+    .hamburger{
+        display: none;
+    }
+
+
+    /* SECTION-ONE STYLING */
+
+    .section-one{
+        background: url('./asset/background/bg1.png');
+        background-size: cover;
+        width: 100%;
+        z-index: -1;
+        color: #ffff;
+    }
+
+    .content-section-one{
+        padding-left: 4em;
+    }
+
+    .content-section-one > p{
+        font-size: 1.5rem;
+        margin-bottom: -2em;
+    }
+    
+    .content-section-one > h1{
+        font-size: 8.5rem;
+    }
+    
+    .content-section-one > h2{
+        font-size: 5rem;
+        margin: -0.7em 0 0 7.95em;
+    }
+
+    .owner{
+        width: 30%;
+    }
+
+    /* SECTION TWO STYLING */
+
+    .section-two{
+        background: url('./asset/background/bg2.png');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+    }    
+
+    .section-two > h1{
+        font-size: 3.5rem;
+        margin-bottom: 0;
+    }
+    
+    .sub-section-two-one > p,
+    .sub-section-two-two > p{
+        width: 86%;
+        font-size: 1.25rem;
+    }
+
+    .sub-section-two-one,
+    .sub-section-two-two{
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        justify-content: space-around;
+        width: 80%;
+        margin: 2em;
+    }
+
+    .gif-one{
+        width: 90%;
+        height:255px;
+    }
+    
+    .gif-two{
+        width: 90%;
+        height:255px;
+    }
+
+
+    /* SECTION THREE STYLING */
+    .section-three{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #ffff;
+    }
+
+    .section-three > h1{
+        font-size: 3.5rem;
+        margin: 0;
+    }
+
+    .sub-section-three-one{
+        justify-content: space-between;
+        width: 18%;
+    }
+
+    .section-three > p{
+        width: 65%;
+        font-size: 1.25rem;
+    }
+
+
+    .sub-section-three-two-one{
+        height: 350px;
+        width: 300px;
+        margin-left: -5em;
+        z-index: -1;
+    }
+
+    .sub-section-three-two-two{
+        height: 350px;
+        width: 300px;
+        top: -1.2em;
+    }
+
+    .sub-section-three-three{
+        width: 50%;
+        margin: 1em auto;
+    }
+
+    .sub-section-three-three > button{
+        padding: 1.75em;
+        border-radius: 15px;
+    }
+
+    /* SECTION FOUR STYLING */
+    .section-four{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .tv{
+        background: url('./asset/tv2real.png');
+        background-size: cover;
+        width: 45%;
+        height: 100%;
+        margin: 1em auto 0;
+    }
+
+    .tv > video{
+        width: 100%;
+        height: 270px;
+    }
+
+    .section-four > h1{
+        font-size: 3.5rem;
+        margin-bottom: 0;
+    }
+
+    .section-four > p{
+        width: 48%;
+        font-size: 1.25rem;
+    }
+
+    .contact,
+    .number{
+        font-size: 2rem;
+        margin: 0; 
+    }
+
+    .number{
+        padding-bottom: 1.25em;
+    }
+
+    /* SECTION FIVE STYLING */
+    footer{
+        width: 100%;
+        background-color: #0c151e;
+        height: 200px;
+        max-width: 1030px;
+        margin: 0 auto;
+    }
+
+    .footer{
+        background: linear-gradient(#0063cb,#0c151e);
+        border-top-left-radius: 2em;
+        border-top-right-radius: 2em;
+        margin: 0;
+        position: relative;
+        z-index: 10;
+        top: 1em;
+    }
+
+    .bg-footer{
+        width: 100%;
+        height: 250px;
+    }
+
+    .bg-footer > p{
+        margin-bottom: 0;
+    }
+
+    .bg-footer > hr{
+        max-width: 1030px;
+        margin: 0;
+    }
+
+    .footer > h1{
+        font-size: 10.5rem;
+        margin: 0;
+        margin-top: -0.95em;
+    }
+}
+
+@media (min-width:1024px) {
+
+    /* HEADER STYLING */
+    .header{
+        max-width: 1030px;
+    }
+
+    /* SECTION FOUR STYLING */
+    .section-four{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .tv{
+        background: url('./asset/tv2real.png');
+        background-size: cover;
+        width: 60%;
+        height: 60vh;
+        margin: 0;
+        position: relative;
+    }
+
+    .tv > video{
+        width: 100%;
+        height: 270px;
+        position: absolute;
+        top: 4em;
+        left: 0.5em;
+    }
+
+}
