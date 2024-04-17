@@ -19,12 +19,10 @@ document.addEventListener('click', (e) => {
             tattoodesignEl.style.background = `url(${images[counter]})`
             tattoodesignEl.style.backgroundSize = 'cover'
             tattoodesignEl.style.objectFit = 'cover'
-            document.getElementById('btn-left').style.opacity = '100%'
             rotate()
             console.log(counter)
         }
         else if(counter == 3){
-            document.getElementById('btn-right').style.opacity = '100%'
             rotate()
         }
         
@@ -38,10 +36,8 @@ document.addEventListener('click', (e) => {
             tattoodesignEl.style.objectFit = 'cover'
             console.log(counter)
             rotate()
-            document.getElementById('btn-right').style.opacity = '100%'
         }
         else if(counter == 0){
-            document.getElementById('btn-left').style.opacity = '100%'
             rotate()
         }
         
