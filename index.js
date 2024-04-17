@@ -10,7 +10,6 @@ let counter = 0
 let cook = 1
 
 
-document.getElementById('btn-left').style.opacity = '10%'
 
 document.addEventListener('click', (e) => {
     
@@ -25,7 +24,7 @@ document.addEventListener('click', (e) => {
             console.log(counter)
         }
         else if(counter == 3){
-            document.getElementById('btn-right').style.opacity = '10%'
+            document.getElementById('btn-right').style.opacity = '100%'
             rotate()
         }
         
@@ -42,7 +41,7 @@ document.addEventListener('click', (e) => {
             document.getElementById('btn-right').style.opacity = '100%'
         }
         else if(counter == 0){
-            document.getElementById('btn-left').style.opacity = '10%'
+            document.getElementById('btn-left').style.opacity = '100%'
             rotate()
         }
         
