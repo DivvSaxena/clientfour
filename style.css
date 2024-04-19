@@ -655,24 +655,20 @@ footer{
     /* SECTION FOUR STYLING */
     .section-four{
         width: 100%;
-        height: 100vh;
+        height: 100%;
     }
 
     .tv{
-        background: url('./asset/tv2real.png');
+        background: none;
         background-size: cover;
-        width: 60%;
-        height: 60vh;
-        margin: 0;
-        position: relative;
+        width: 70%;
     }
 
     .tv > video{
         width: 100%;
         height: 270px;
-        position: absolute;
-        top: 4em;
-        left: 0.5em;
+        margin: 1.5em auto;
     }
+
 
 }
