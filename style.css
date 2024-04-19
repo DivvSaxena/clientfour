@@ -4,10 +4,8 @@
 html,body{
     margin: 0;
     box-sizing: border-box;
-    background: #41295a;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     position: relative;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
     z-index: -10;
 }
 
@@ -39,7 +37,6 @@ nav{
     position: fixed;
     background: #121212;
     width: 100%;
-    max-width: 100vw;
     height: 10vh;
     display: flex;
     justify-content: space-around;
@@ -157,7 +154,7 @@ a:hover{
 	background-size: cover;
     background-position: center;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     color: #ffff;
     z-index: 10;
 }
@@ -315,11 +312,10 @@ a:hover{
     width: 100%;
     height: 25%;
     margin: 0 auto 3em;
-    
 }
 
 .tv > video{
-    width: 100vw ;
+    width: 100% ;
     height:250px;
 }
 
@@ -360,7 +356,6 @@ footer{
     align-items: center;
     width: 100%;
     color: #ffff;
-    background: linear-gradient(#0063cb,#0c151e);
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
     margin: 0;
@@ -615,7 +610,7 @@ footer{
     }
 
     .footer{
-        background: linear-gradient(#0063cb,#0c151e);
+        background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
         border-top-left-radius: 2em;
         border-top-right-radius: 2em;
         margin: 0;
